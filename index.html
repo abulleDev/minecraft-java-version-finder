@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Minecraft Java Version Finder</title>
+  </head>
+  <body>
+    <iframe width="448" title="finder" src="finder.html"></iframe>
+    <style>
+      body {
+        margin: 0;
+        height: 100dvh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: oklch(98.5% 0.002 247.839);
+      }
+
+      iframe {
+        margin: 0 auto;
+        display: block;
+        border: none;
+      }
+    </style>
+    <script>
+      const iframe = document.getElementsByTagName('iframe')[0];
+      window.addEventListener('message', (event) => {
+        if (event.data.type === 'setIframeSize') {
+          iframe.width = event.data.width;
+          iframe.height = event.data.height;
+        }
+      });
+    </script>
+  </body>
+</html>
