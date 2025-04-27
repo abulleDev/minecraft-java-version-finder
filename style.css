@@ -15,6 +15,7 @@ body {
   border-radius: 0.5rem;
   border: 0.0625rem solid oklch(92.8% 0.006 264.531);
   background-color: #fff;
+  font-family: -apple-system, BlinkMacSystemFont, Roboto, 'Helvetica Neue', 'Noto Sans KR', 'Malgun Gothic', 'Apple SD Gothic Neo', sans-serif;
 }
 
 /* Card Header */
